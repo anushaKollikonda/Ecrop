@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script th:inline="javascript">
+		$(function () {
+			onload();
+		});
+
+		function onload() {
+			show_hide_textfield();
+		}
+
+		function show_hide_textfield() {
+
+			var searchParam = document.getElementById("searchParam").value;
+
+			//    alert($('#tr_surveyno'));
+			$('#tr_surveyno').hide();
+			$('#tr_tosurveyno').hide();
+			$('#tr_fkhno').hide();
+			$('#tr_tokhno').hide();
+			$('#surveyno').val("");
+			$('#fromKhnoId').val("");
+			$('#toKhnoId').val("");
+			$('#tosurveyno').val("");
+
+			if (searchParam == "1") {
+				$('#tr_surveyno').show();
+				$('#tr_tosurveyno').show();
+
+			} else if (searchParam == "2") {
+
+				$('#tr_fkhno').show();
+				$('#tr_tokhno').show();
+			}
+		}
+
+		function fetchData() {
+			var searchParam = $('#searchParam').val();
+			var surveyno = $('#surveyno').val();
+			var khno_bkid = $('#fromKhnoId').val();
+
+			if ($('#cropyear').val() === "") {
+				alert("Please Select CropYear");
+				return false;
+			}
+			if ($('#vcode').val() === "") {
+				alert("Please Select Village");
+				return false;
+			}
+
+			if (searchParam === "1") {
+				if (surveyno === null || surveyno === "") {
+					alert("Please Enter SurveyNo");
+					return false;
+				} else if (surveyno === "0") {
+					alert("Survey Number cannot be 0");
+					return false;
+				}
+			} else if (searchParam === "2") {
+				if (khno_bkid === null || khno_bkid === "") {
+					alert("Please Enter Khata Number");
+					return false;
+				} else if (khno_bkid === "0") {
+					alert("Khata Number cannot be 0");
+					return false;
+				}
+			}
+
+			document.srnoFrom.method = "post";
+			document.srnoFrom.action = "srnoListIntf.jsp";
+			document.srnoFrom.submit();
+			return true;
+
+		}
+	</script>
+
+
+	<title>Village and Employee Selection</title>
+	<style>
+		.grey-text {
+			color: grey;
+			font-family: Arial, sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.black-text {
+			color: black;
+			font-family: Arial, sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.blue-background {
+			background-color: #3498db;
+		}
+
+		.grey-background {
+			background-color: #D9D9D9;
+		}
+
+		.white-background {
+			background-color: white;
+		}
+
+		.cropbook {
+			background-color: white;
+			width: 100%;
+			text-align: center;
+		}
+
+		.village {
+			padding: 10px;
+			margin: 10px;
+			text-align: center;
+		}
+
+		.btn {
+			background-color: skyblue;
+			align-items: center;
+			border-color: skyblue;
+			border-radius: 5px;
+		}
+
+		.button {
+			align-items: center;
+			padding: 10px;
+			margin-left: 60%;
+		}
+	</style>
+</head>
+
+<body style="background-color: #D9D9D9">
+	<h1 class="grey-text white-background" align="center">Welcome To
+		Ravi VAA/VSA/VHA Venignadla Village,Guntur</h1>
+	<h2 class="grey-background"></h2>
+	<h3 class="black-text blue-background" align="center">Selection Of
+		Survey No's For Crop Booking</h3>
+	<form th:action="@{/home}" method="GET">
+
+
+		<div class="cropbook ">
+			<table align="center">
+
+				<tr>
+					<td class="tdnum" width="50%"><b>Crop Year <font color="red">*</font></b></td>
+					<td><select id="cropyear" name="cropyear" onchange="getVillage()" style="width: 200px">
+							<option value="">---Select---</option>
+
+							<option th:text="${cropYear}"></option>
+
+						</select></td>
+				</tr>
+
+				<!--				<tr>-->
+				<!--					<td class="tdnum" width="50%"><b> Village <font-->
+				<!--							color="red">*</font></b></td>-->
+				<!--					<td><select id="vcode" name="vcode" style="width: 200px">-->
+				<!--							<option th:each="village : ${villages}"-->
+				<!--								th:text="${village.wbvname}"></option>-->
+				<!--					</select></td>-->
+				<!--				</tr>-->
+
+				<tr>
+					<td class="tdnum" width="50%"><b>Search By <font color="red">*</font></b></td>
+					<td><select id="searchParam" name="searchParam" style="width: 200px"
+							onchange="show_hide_textfield()">
+							<option value="1">Whole Survey No</option>
+							<option value="2">Khata No</option>
+
+						</select></td>
+				</tr>
+				<tr id="tr_surveyno">
+					<td class="tdnum" width="50%"><b>From Whole Survey No <font color="red">*</font></b></td>
+					<td><input type="text" name="surveyno" id="surveyno" style="width: 200px"></td>
+					<!--				</tr>-->
+					<!--				<tr id="tr_tosurveyno">-->
+					<!--					<td class="tdnum" width="50%"><b>To Whole Survey-->
+					<!--							No(Optional) </b></td>-->
+					<!--					<td><input type="text" name="tosurveyno" id="tosurveyno"-->
+					<!--						style="width: 200px"></td>-->
+					<!--				</tr>-->
+				<tr id="tr_fkhno">
+					<td class="tdnum" width="50%"><b>From Khata <font color="red">*</font></b></td>
+					<!--td><input type="number" name="fromKhno" id="fromKhnoId" /></td!-->
+					<!--				</tr>-->
+					<!--				<tr id="tr_tokhno">-->
+					<!--					<td class="tdnum" width="50%"><b> To Khata (Optional)</b></td>-->
+					<!--					<td><input type="number" name="toKhno" id="toKhnoId" /></td>-->
+					<!--				</tr>-->
+
+
+				<tr></tr>
+
+				<tr>
+					<!--					<td align="center" colspan="2"><input type="button"-->
+					<!--						value="Search" /> <input type="button" value="Go Back"-->
+					<!--						onclick="back()"></td>-->
+
+					<form action="#" th:action="@{/search/kathaNo}" th:object="${cultivatorsList}" method="post">
+						
+						
+						
+						<div alight="left">
+				<tr>
+					<label class="form-label">kh_no</label>
+					<td>
+						<!--th:each="cultivator : ${cultivatorsList}"-->
+						<input type="text" th:field="*{id}" class="form-control" placeholder="kh_no" />
+					</td>
+				</tr>
+		</div>
+
+		<br>
+		<tr>
+			<td colspan="2"><button type="submit" class="btn btn-info">Search</button> </td>
+		</tr>
+
+
+		<div alight="left">
+			<tr>
+				<label class="form-label"> oc_name;</label>
+				<td>
+					<input type="text" th:field="${cultivatorsList.ename}" class="form-control"
+						placeholder="oc_name;" />
+				</td>
+			</tr>
+		</div>
+	</form>
+	</tr>
+
+	</table>
+	</div>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,1096 @@
+/* 
+    Document   : HTcss
+    Created on : Sep 2, 2013, 11:03:41 AM
+    Author     : VANJA-U52F
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+*{
+    font-family: calibri, arial, sans-serif;/**/
+    font-size: 95%;
+    color: #565656
+}
+
+h1 {
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+
+/*                links                    */
+
+a, a:visited {
+    color: #4b4bea;
+    cursor: pointer;
+}
+a:hover{
+    color: #2424C9; 
+}
+hr{
+    border: none;
+    border-top: 1px solid #b1b0b0;
+}
+
+/*               inputs                    */
+
+label{
+    display: inline-block;
+    line-height: 24px;
+    width: 98%;
+    padding-left: 2%;
+    
+}
+textarea{display: inline-block;box-sizing: border-box;-moz-box-sizing: border-box;padding: 5px; resize: none; width:100%;box-shadow: 1px 1px 5px #DADADA inset;border: 1px solid #b1b0b0;}
+input[type=text], label + input[type=text], .loginInputs input[type=text]{
+    line-height: 22px;
+	height: 22px;
+	padding: 0 3%;
+	margin-top: 2px;
+    padding: 0 3%;
+}
+label + input[type=text], .loginInputs input[type=text]{
+    width: 93%;
+
+}
+
+input[type=submit], input[type=button]{
+                padding: 4px 13px;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                border: 1px solid #000084;
+                background: #4b4bea center left no-repeat;
+                color: white;
+                box-shadow: 0px 1px 0px #9393f0 inset,0 -1px 0 #3636aa inset;
+                cursor: pointer;
+            }
+            input[type=submit]:hover, input[type=button]:hover  {
+                background: #7070F5 center left no-repeat;
+                box-shadow: 0px 1px 0px #9393f0 inset,0 -1px 0 #4848CC inset;
+            }
+			
+			
+select{
+    min-width: 120px;
+    height: 24px;
+    box-shadow: 1px 1px 5px #DADADA inset;
+    
+    margin-top: 2px;
+	
+}
+
+input[type="file"]{
+   -webkit-appearance: none;
+   text-align: left;
+   -webkit-rtl-ordering:  left;
+   /*width: 100%;*/
+}
+.btn{}
+select, input[type=text],textarea, label + input[type=text], .loginInputs input[type=text]{
+    border: 1px solid #b1b0b0;
+    box-shadow:0 0 0px rgba(0, 0, 0, 0),1px 1px 5px #DADADA inset;
+    transition:box-shadow 1s, border 1s;
+    -webkit-transition:box-shadow 0.5s, border 0.5s; /* Safari */
+    
+    
+}
+label.inline{display: inline;padding-right: 2%;}
+input[type=checkbox] + label.inline{padding-left: 0;cursor: pointer}
+input[type=text].multiple{width: 60%;}
+.ui-accordion-content table{width: 100%}
+
+.ui-dialog select, .ui-dialog input[type=text], .ui-dialog textarea,  .ui-dialog .loginInputs input[type=text] {
+width: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+select:focus, input[type=text]:focus,textarea:focus, label + input[type=text]:focus, .loginInputs input[type=text]:focus{
+    border: 1px solid #4b4bea;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 1px 1px 5px #DADADA inset;
+}
+
+body{
+    background: #D3D3D3;
+}
+.clear{
+    clear: both;
+}
+
+.htContent{
+    width: 1130px;
+    margin: 10px auto;
+    border: 1px solid #b1b0b0;
+    overflow: visible;
+    background: white;
+    box-shadow: 0 0 3px #b1b0b0;
+}
+.LargeHeader, .SmallHeader{
+    background: #f7f7f7;
+    border-bottom: 1px solid #b1b0b0;
+    box-shadow: 0 1px 11px #CECACA;
+    margin-bottom: 20px;
+}
+.LargeHeader{
+    padding: 10px 0;
+}
+    .ContLogin{
+        width: 1030px;
+        margin: 0 auto;
+    }
+    .ConLogin{
+        width: 961px;
+		display:block;
+		overflow:hidden;
+        margin: 0 auto;
+    }
+    .htLogo{
+        float: left;
+
+    }
+    .htLogoPro{
+        float: left;
+        width: 115px;
+        padding: 8px 8px 8px 0;
+
+    }
+    .proMenu{
+        float: left;
+    }
+/*    .proMenu .menuItem:first-child{
+        border-left: 1px solid #B8B8B8;
+    }*/
+    .menuItem{
+        display: inline-block;
+        line-height: 50px;
+        text-align: center;
+        /*border-right: 1px solid #B8B8B8;*/
+        /*background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;*/
+        float: left;
+        cursor: pointer;
+        padding: 0 8px;
+    }
+    .menuItem a{
+        display: inline-block;
+        line-height: 50px;
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        color: #696969;
+    }
+    .menuItem a:hover{
+        color: #363636;
+    }
+/*    .menuItem:hover{
+        background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+        
+    }*/
+        .menuIcon{
+            vertical-align: -0.1em;
+            padding-right: 8px;
+        }
+        
+    .LargeHeader .login{
+        float:right;
+        margin-top: 13px;
+    }
+    .SmallHeader .login{
+        float:right;
+    }
+    .htUser{
+        float: right;
+        padding: 17px 0;
+    }
+        #UserName, .UserName{
+            font-weight: bold;
+            color: #4b4bea;
+        }
+        
+        #UserName:after{
+            content: '';
+            border-top: 6px solid #565656;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: none;
+            line-height: 0;
+            position: relative;
+            top: 13px;
+        }
+        #UserName:hover:after{
+            border-top: 6px solid blue;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-right: 6px solid transparent;
+
+        }
+        .menuUser{
+            display: inline-block;
+            position: relative;
+        }
+        .menuUser li{
+            
+        }
+        .menuUser li:hover > ul{
+            display: block;
+        }
+        .menuUser ul{
+            display: none;
+            position: absolute;
+            margin: 0 15px;
+            border: 5px solid rgb(238, 238, 238);
+            background: white;
+            margin-left: 2px;
+            box-shadow: 0 1px 3px rgb(139, 139, 139);
+            z-index: 101;
+            outline: 1px solid #AAA7A7;
+        }
+        .menuUser li li{
+            display: block;
+            width: 119px;
+            line-height: 27px;
+            padding: 0 10px;
+        }
+        .menuUser li li:hover{
+            background: #4b4bea;
+            color: white;
+        }
+    .loginInputs{
+        float: right;
+        width: 200px;
+        margin: 0 1em;
+    }
+   
+    
+    .SignInForm{
+        -moz-box-shadow: 0 0 3px #AAAAAA;
+        -webkit-box-shadow: 0 0 3px #AAAAAA;
+        box-shadow: 0 0 3px #AAAAAA;
+        -moz-border-radius-bottomleft: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border: 6px solid rgb(238, 238, 238);
+        float: left;
+        width: 350px;
+        margin-left: 50px;
+    }
+    .signin{
+        width: 310px;
+        margin: 10px auto;
+    }
+    .tableRegistation{
+        width: 100%;
+        background: #4b4bea;
+    }
+    .tableRegistation a, .tableRegistation a:visited {
+        color: #C5C5F1;
+        cursor: pointer;
+    }
+    .tableRegistation a:hover {
+        color: #ECECF5;
+    }
+    .tableRegistation td{
+        vertical-align: middle;
+
+    }
+     
+    .tableRegistation img{
+        width: 25px;
+        margin-left: 1em;
+    }
+    .SignInForm h3{
+        padding: 0.5em 1em;
+        color: white;
+        background: #4b4bea;
+    }
+
+    .contentIT{
+        min-height: 500px;
+            
+    }
+    .menuColumn, .ITarea{
+        float: left;
+        margin: 0 10px;
+    }
+        .menuColumn{
+           width: 250px;
+        }
+            div.infoUser, div#AccordionMenu, .ConnectList, .ITareaSon, div.shadowedBoxes{
+                border: 1px solid #b1b0b0;
+                background: whitesmoke;
+                box-shadow: 0 1px 2px #b1b0b0;
+                margin-bottom: 10px; 
+            }
+            .ConnectList{
+                overflow: hidden;
+            }
+            div.shadowedBoxes{
+                padding: 10px;
+                line-height: 1.65em
+            }
+                table.infoUser, table.employee{
+                    width: 100%;
+                }
+                table.registration{
+                    border-bottom: 1px solid #B9B9B9;
+                }
+                table.infoUser div > ul{padding-bottom: 10px;}
+                .photo{
+                    width: 95px;
+                    background: #fff;
+                    border-right: 1px solid #B9B9B9;
+                }
+                table.employee td div.employee{
+                   padding: 25px 0;
+                   background: #fff;
+                   border-bottom:  1px solid #b1b0b0
+                }
+                div.employee img.employee{
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 248px;
+                }
+                table.userRegInfo  td{
+                    position: relative;
+                }
+                table.userRegInfo  td > div{
+                    box-sizing: content-box;
+                }
+                input[type=text].required{
+                    background: #fff url('images/required.png') no-repeat 98% center ;
+                }
+                input[type=text].required2{
+                    background: #fff url('images/required2.png') no-repeat 98% center ;
+                }
+
+                .red{
+                    color: red;
+                    font-size: 0.7em;
+                }
+                .regTitle{font-weight: bold;/*line-height: 30px*/ padding:10px;}
+				
+                table.infoUser span, table.employee span{
+                    display: inline-block;
+                    width: 85%;
+                    padding: 0 8%;
+                    line-height: 24px;
+                    padding-top: 5px;
+
+                }
+                table.infoUser li.personalInfo{
+                    padding-left: 10%;
+
+                }
+                table.employee li.personalInfo{
+                    padding-left: 6%;
+                    padding-right: 6%;
+
+                }
+                table.employee li input[type=text]{
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    width: 100%;
+
+                }
+                table.infoUser span:first-child, table.employee span:first-child{
+                    font-weight: bold;
+
+                }
+                table.infoUser td{
+                    vertical-align: top;
+                }
+            
+            .accordionSectTab{
+                position: relative;
+            }
+            .accordionTab{
+                margin: 0 !important;
+                border: none;
+                border-bottom: 1px solid #b1b0b0;
+
+            }
+                #AccordionMenu .ui-accordion-header-active, #AccordionMenu .ui-state-active{
+                    line-height: 30px;
+                    padding: 0 0.5em !important;
+                    background: white;
+                    border: none;
+                    border-bottom: 1px solid #b1b0b0;
+                    box-shadow: 0 1px 2px #b1b0b0;
+                    position: relative;
+                    z-index: 2;
+                    font-weight: bold;
+                }
+                #AccordionMenu .ui-accordion-header{
+                    padding: 0 0.5em !important;
+                    border-bottom: 1px solid #b1b0b0;
+                    line-height: 30px;
+                    cursor: pointer;
+                }
+                #AccordionMenu .ui-accordion-content{
+                    margin-bottom: 0;
+                    border-bottom: 1px solid #b1b0b0;
+                    z-index: 1;
+                }
+/*                .TabInactive:hover > span{
+                    color: #4b4bea;
+                }*/
+                .lastTab{
+                    border-bottom: none;
+                    border: none;
+                    margin-bottom: 0; 
+                }
+            .accordionSection{
+                background: white;
+                border: none;
+                border-bottom: 1px solid #b1b0b0;
+                padding: 0 !important;
+            }
+            .accordionSection a{
+                display: inline-block;
+                line-height: 26px;
+                width: 84.7%;
+                cursor: pointer;
+                color: #565656;
+                padding: 0 8%;
+            }
+            .accordionSection a:hover{
+                background: #4b4bea;
+                color: white;
+            }
+            
+                
+                
+        .ConnectList{
+            
+        }        
+        .ConnectList h3{
+            padding: 0 0.5em;
+            background: white;
+            line-height: 30px;
+            border-bottom: 1px solid #b1b0b0;
+        }        
+        .ConnectList span{
+            display: inline-block;
+            padding: 0 8%;
+            width: 85%;
+            cursor: pointer;
+            line-height: 24px;
+            font-size: 0.85em;
+        }        
+        .ITarea{
+            width: 1090px;
+        }
+		.JRWRarea{
+           /* width: 100%;*/
+			margin:10px;
+        }
+            .Times{
+                width: 50%;
+                margin-bottom:10px;
+                font-size: 0.8em;
+            }
+                .Times td{
+                    text-align: center;
+                }
+                .City{
+                    font-weight: bold;
+                }
+                .Hours{
+                    font-size: 1.3em
+                }
+                .whiteBg{
+                    background: #fff;
+                    border: 1px solid #b1b0b0;
+                    
+                }
+                .Date{
+                    font-size: 0.9em;
+                }
+            .ITareaSon{
+                padding: 10px;
+
+            }
+            
+                .ITareaSon h3.skills{
+                    padding: 0.5em 0;
+
+                }
+                .ITareaSon h3{
+                    padding-bottom:0.5em;
+
+
+                }
+            
+            .ITsearh{
+                
+            }
+            .SearchIcon{
+                padding-left: 33px !important;
+                background-image: url('images/SearchIcon.png')  !important;
+                background-position: center left;
+                background-repeat: no-repeat;
+            }
+            
+            .tabHeader{
+                position:relative;
+                z-index: 1;
+            }
+            
+            .tabHeader, .tabHeader .activeTab,.tabHeader .inactiveTab, .tabHeader ul,.accordionTab, .accordionSection {
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .tabHeader ul{
+                border-bottom: 1px solid #b1b0b0; 
+            }
+            
+            .tabHeader .activeTab,.tabHeader .inactiveTab{
+                border:none ;
+                border-right:1px solid #b1b0b0;
+            }
+            .tabHeader li{
+                float: left;
+            }
+            .tabHeader li.nofloat{
+                float: none;
+                line-height: 40px;
+            }
+            
+            .activeTab{
+                display: inline-block;
+                line-height: 40px;
+                background: white;
+                padding: 0 1.5em;
+                border: 1px solid #b1b0b0;
+                cursor: default;
+                border-bottom: none;
+                border-left: none;
+                font-weight: bold;  
+            }
+            .inactiveTab{
+                display: inline-block;
+                line-height: 40px;
+                background: transparent;
+                padding: 0 1.5em;
+                color: #BEBEBE;
+                border-right: 1px solid #b1b0b0;
+                cursor: pointer;
+                border-top: 1px solid #b1b0b0;
+            }
+            .inactiveTab:hover{
+                color:#888888   ;
+            }
+            .tabContent{
+                padding: 10px;
+                background: white;
+                border: 1px solid #b1b0b0;
+            }
+            .shadowedBoxes fieldset{padding: 10px 10px 10px 20px;}
+            .regsTitle{}
+            .title{
+                cursor: pointer
+            }
+            .title img{
+                width: 16px;
+                vertical-align: 0;
+                margin-left: 5px;
+            }
+            
+                .showIcon{display:inline}
+                .editIcon{ height: 14px;margin-left: 10px;}
+                
+            .title:hover{}
+            table.userRegInfo{}
+            table.userRegInfo td{padding: 0 1%;width: 25%;}
+            table.userRegInfo select{width: 100%;color: #A5A5A5;}
+            table.skills{
+                width: 100%;
+                border: 1px solid #b1b0b0;
+                }
+            table.skills thead{
+                background: white;
+                border-bottom:  1px solid #b1b0b0;
+                }
+                table.skills  tr.trEven {
+                    background: #FCFCFC;
+                    }
+                table.skills  tr.trOdd {
+                    background: #FeFeFe;
+                    }
+                table.skills  td {
+                    text-align: center;
+                    border-left: 1px solid #b1b0b0;
+                    
+                    }
+                table.skills thead td {
+                    text-align: center;
+                    border-left: 1px solid #b1b0b0;
+                    font-weight: bold
+                    }
+                table.skills img {
+                    height: 16px;
+                    margin: 0 0.3em;
+                    cursor: pointer;
+                    vertical-align: -0.25em;
+                    }
+                table.skills tfoot {
+                    border-top:1px solid #b1b0b0;
+                    background: #E7E7E7;
+                    }
+                table.skills tfoot td{
+                    border:none; 
+                    }
+                table.tFooter {
+                    width: 100%;
+                    font-size: 80%;
+                    }
+                table.tFooter td{
+                    width: 33.33%;
+                    padding: 0 0.5em
+                    }
+                    .td50{width: 50%!important;}
+input[type=button].btnGroup, input[type=button].jqGridButton, button.replyButton{
+    border: 1px solid #b1b0b0;
+    margin: 0.2em;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #fff;
+    padding: 0.1em 0.3em;
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    color:#696969;
+}
+input[type=button].jqGridButton:hover,  button.replyButton:hover{
+    border: 1px solid #696969;
+    color: #424242;
+    
+}
+a.btn{
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    background: white;
+}
+/*a.btn:after{
+    content:'';
+    border-top: 5px solid rgb(97, 97, 97);
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: relative;
+    top:0.8em;
+    
+}*/
+a.btn:hover{
+    color: rgb(66, 66, 66) ;
+}
+
+.dropdownToggle{}
+.btnGroup ul.dropdownMenu{
+    background: white;
+}
+.btnGroup:hover > ul{
+    display: block;
+}
+ul.dropdownMenu{
+    display: none;
+    position: absolute;
+    right: 0;
+}
+ul.dropdownMenu li{
+    display: block;
+    width: 50px;
+    padding: 0 0.5em;
+}
+    
+    
+.footer{
+    background: #f7f7f7;
+    border-top: 1px solid #b1b0b0;
+    margin-top: 10px;
+    text-align: center;
+    background: url(images/HT-Footer.png) 50% 50%;
+    height: 51px;
+
+}
+    .footer a{
+        display: inline-block;
+        width: 13%;
+        line-height: 20px;
+        padding-top: 1em;
+        cursor: pointer;
+    }
+    
+    
+      .ui-tooltip, .arrow:after {
+    background: rgb(255, 255, 255);
+border: 2px solid rgb(194, 194, 196);
+  }
+  .ui-tooltip {
+    padding: 4px 22px;
+color: white;
+font: bold 14px "Helvetica Neue", Sans-Serif;
+text-transform: uppercase;
+box-shadow: 0 0 3px black;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 29px;
+top: -20px;
+width: 13px;
+height: 27px;
+box-shadow: 0px 0px 7px 0px black;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+  .warningImg{
+      background: transparent url(images/ui-icons_454545_256x240.png) 0 -144px;
+      vertical-align: -3px;
+  }
+  .WhiteArea{
+        border: 1px solid #B6B6B6;
+        background-color: #fff;
+        padding: 0.5em;
+  }
+  
+  .visaLabel{
+    float: left;
+    display: block;
+    width: 136px;
+  }
+  
+  #dialogCompose label{
+      display: inline-block;
+      width: 20%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      margin-right: 2%; 
+  }
+  #dialogCompose label + input[type=text]{
+      display: inline-block;
+      width: 78%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+  }
+  #dialogCompose textarea{
+      height: 100px;
+  }
+  #userMessage{
+      display: inline-block;
+      width: 78%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+  }
+  *+html select#chosen-select-no-results{
+      height: 50px;
+  }
+  #chosenMail {
+  margin-bottom: 2px;
+  
+}
+  #chosenMail .chosen-container {
+/*  width: 78% !important;*/
+  vertical-align: top;
+}
+  #chosenMail .chosen-choices {
+  max-height: 83px !important;
+  overflow-y: scroll;
+}
+
+.dialogCompose .ui-dialog{
+    height: 330px !important;
+}
+
+.little{
+    font-size: 0.7em;
+}
+
+.ui-accordion-header-active > .editIcon{ display: none}
+
+.infoPreview{
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+}
+.infoPreview h3{
+    border-bottom: 1px solid #aaa;
+    margin-right: 10px;
+    margin-right: 4%;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-bottom:5px;
+}
+
+.infoPreview table{
+    width: 100%;
+}
+.infoPreview label{
+    padding-left: 2%;
+    color: #A0A0A0;
+}
+.infoPreview span{
+    color: #000;
+}
+
+.PreviewBordered{
+    /*border-right: 1px solid #aaa;*/
+    width: 48%;
+    margin-right: 2%;
+}
+.PreviewFooter{
+    
+}
+p.clear {
+clear: both;
+font-size: 0.9em;
+}
+.TnC{
+    font-size: 0.9em;
+}
+.TnC a{
+    font-size: 0.9em;
+    color: #4b4bea;
+}
+.TnC a:hover{
+    color: #8b8bff;
+}
+.Note{color:red;font-size: 0.9em;}
+.CompanyNameJobPost{
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+}
+.td43{width: 43%;}
+.salaryInput{width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;}
+#dialogCompose label{
+    padding-left: 0;
+}
+#dialogCompose label.message{
+    vertical-align: 13px;
+    width: 11%;
+}
+.composeOptions, .fontOptions{
+    display: inline-block;
+    vertical-align: top;
+}
+li.attach, li.fontStyle, li.discard{
+    width: 33px;
+    padding-top: 4px
+}
+li.attach{
+    max-width: 343px;
+}
+li.fontStyle {
+    max-width: 409px;
+}
+li.discard {
+    max-width: 409px; 
+}
+
+div.attach, div.discard, div.fontStyle{
+    overflow: hidden;
+}
+div.attach{
+    width: 338px;
+    height: 26px;
+}
+div.fontStyle{
+    width: 409px;
+}
+div.discard{
+    width: 409px;
+}
+div.attach span, div.discard span, div.fontStyle span{
+}
+div.discard a{
+    display: inline-block;
+    width: 100%;
+    
+}
+div.discard a span{
+    color: #4b4bea;
+    line-height: 20px;
+}
+
+img.attach, img.fontStyle, img.discard{
+    vertical-align: top;
+    margin: 0 5px;
+    width: 23px;
+    background: transparent url(images/composeOptions.png);
+}
+img.attach{
+    background-position: 0px -1px;
+}
+
+img.fontStyle{
+    background-position: -24px -1px;
+}
+
+img.discard{
+    background-position: -47px -1px;
+}
+.ui-dialog div.fontStyle input[type=button].jqGridButton{margin: 0;vertical-align: top;}
+.bold{font-weight: 700;}
+.italic{font-style: italic;}
+.sub{text-decoration: underline;}
+.fontStyleConteiner{ display: inline-block;vertical-align: top;}
+.ui-dialog div.fontStyle select.fontSize{width: 56px;vertical-align: top;padding: 0 ;margin: 0;min-width: 56px;}
+.ui-dialog div.fontStyle select.fontStyle{ width: 100px;vertical-align: top;padding: 0 ;margin: 0;min-width: 100px;}
+#colorSelector{width: 24px;height: 24px; display: inline-block;vertical-align: top;}
+#colorSelector div{width: 24px;height: 24px;background: url(images/select2.png) center;}
+.fontColor{}
+.bulletsOptions{
+    width: 84px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 7px
+}
+.bulletsOptions a{
+    display: inline-block;
+    font-size: 11px;
+    vertical-align: top;
+}
+
+.ITareaSon .whiteBg.view{
+    
+}
+.view h1{
+    border-bottom: 1px solid #CECECE;
+    padding: 0.8em 8px;
+}
+
+.mailOptions{
+    display: inline-block;
+   float: right;
+   padding-top: 0.8em;
+   padding-right:  8px;
+}
+.mailOptionsInboxSent {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+.mailOptionsInboxSent ul{
+    position: absolute;
+    z-index: 2;
+}
+.mailOptions ul{
+    position: absolute;
+    z-index: 2;
+}
+.view h1 span.mailOptions button.replyMail, .view h1 span.mailOptions button.replyMailMenu{
+   float: right;
+    margin: 0;
+    font-size: 15px;
+}
+img.replyMail{
+    
+}
+.view h1 span.mailOptions button.replyMail{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: none;
+}
+.view h1 span.mailOptions button.replyMail:Hover{
+    border-right: none;
+}
+.view h1 span.mailOptions button.replyMailMenu{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.view p.ContactMail{
+    padding: 0.5em 16px;
+	/*margin:0.5em 16px;*/
+    background: #FAFAFA;
+}
+.view p.mailTo{
+    padding: 0.7em 16px;
+    font-size: 0.8em;
+}
+.view p.mailTo span{
+    font-weight: bold;
+    
+}
+.view p.mailBody{
+    padding: 1em 2em 2em 2.5em;
+    border-top: 1px solid #F7F7F7;
+    
+}
+.view div.mailBody{
+    padding: 1em 2em 2em 2.5em;
+    border-top: 1px solid #F7F7F7;
+    
+}
+.attachFile{padding-left: 12px}
+.tableRegistation h3.posting{
+    padding: 1em;
+    text-align: center;
+}
+span.answer{padding: 0 30px 0 5px;}
+
+#Company {
+	clear:both;
+}
+
+#Company table tr td, #Contact table tr td {
+	padding:3px;
+	vertical-align:top;
+}
+
+#Company table tr td input, #Company table tr td select, #Contact table tr td input, #Contact table tr td select {
+	float:right;
+}
+
+#Company table tr td select, #Contact table tr td select {
+	width:208px;
+}
+
+#Terms {
+	text-align:center;
+}
+
+.infoUser ul {
+	margin:0;
+	padding:0;
+}
+
+.infoUser ul li label {
+	margin:3px 10px;
+}

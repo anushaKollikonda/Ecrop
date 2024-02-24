@@ -1,0 +1,260 @@
+<div th:if="${ownersList!=null and !ownersList.isEmpty()}" class="panel-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading"
+			style="text-align: center;background-color: honeydew;padding: 8spx; margin: 0 auto;display: table;">
+			<b>Owner's Data</b>
+		</div>
+		<div class="panel-body">
+
+			<table id="ownerGrid" class="table table-bordered table-striped dataTable">
+				<thead class="color-palette" style="background-color: #9494b8;">
+					<tr>
+						<td style="color: white; width:10%;background-color: #9494b8;"><b>Booking Id</b></th>
+						<td style="color: white; width:7%;background-color: #9494b8;"><b>Survey No</b></th>
+						<td style="color: white; width:7%;background-color: #9494b8;"><b>Khata No</b></th>
+						<td style="color: white; width:19%;background-color: #9494b8;"><b>Pattadhar Name</b></th>
+						<td style="color: white; width:19%;background-color: #9494b8;"><b>Pattadhar Father Name</b></th>
+						<td style="color: white; width:8%;background-color: #9494b8;"><b>Aadhaar No</b></th>
+						<td style="color: white; width:8%;background-color: #9494b8;"><b>Total Extent</b></th>
+						<td style="color: white; width:10%;background-color: #9494b8;"><b>Available Extent</b></th>
+						<td style="color: white; width:10%;background-color: #9494b8;padding-left: 35px;"><b>Actions</b>
+							</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:id="${cultivator.bookingId}" th:each="cultivator:${ownersList}">
+
+						<td style="width:10%;">
+							<span th:text="${cultivator.bookingId}"></span>
+							<input type="hidden" th:value="${cultivator.bookingId}"
+								th:id="'bookingId'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.part_key}"
+								th:id="'part_key'+${cultivatorStat.index}">
+
+							<input type="hidden" th:value="${cultivator.cr_vcode}"
+								th:id="'cr_vcode'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.cr_year}"
+								th:id="'cr_year'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.cr_season}"
+								th:id="'cr_season'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.owner_tenant}"
+								th:id="'owner_tenant'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.cultivatorType}"
+								th:id="'cultivatorType'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.occupantExtent}"
+								th:id="'occupantExtent'+${cultivatorStat.index}">
+
+						</td>
+						<td style="width:10%;">
+							<span th:text="${cultivator.crSno}"></span>
+							<input type="hidden" th:value="${cultivator.crSno}" th:id="'crSno'+${cultivatorStat.index}">
+						</td>
+						<td style="width:10%;">
+							<span th:text="${cultivator.khNo}"></span>
+							<input type="hidden" th:value="${cultivator.khNo}" th:id="'khNo'+${cultivatorStat.index}">
+						</td>
+						<td style="width:13%;">
+							<span th:text="${cultivator.ocName}"></span>
+							<input type="hidden" th:value="${cultivator.ocName}"
+								th:id="'ocName'+${cultivatorStat.index}">
+						</td>
+						<td style="width:15%;">
+							<span th:text="${cultivator.fatherName}"></span>
+							<input type="hidden" th:value="${cultivator.fatherName}"
+								th:id="'fatherName'+${cultivatorStat.index}">
+						</td>
+						<td style="width:10%;">
+							<span th:text="${cultivator.aadharNo}"></span>
+							<input type="hidden" th:value="${cultivator.aadharNo}"
+								th:id="'aadharNo'+${cultivatorStat.index}">
+						</td>
+						<td style="width:10%;">
+							<span th:text="${cultivator.anubhavadarExtent}"></span>
+							<input type="hidden" th:value="${cultivator.anubhavadarExtent}"
+								th:id="'anubhavadarExtent'+${cultivatorStat.index}">
+						</td>
+						<td style="width:10%;">
+							<span th:text="${cultivator.availableExtent}"></span>
+							<input type="hidden" th:value="${cultivator.availableExtent}"
+								th:id="'availableExtent'+${cultivatorStat.index}">
+						</td>
+						<td style="width:12%;">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group" style="margin-bottom: 5px;">
+										<div class="input-group">
+											<div style="margin: 0 auto; color: #000;">
+												<select th:id="'searchParam'+${cultivatorStat.index}"
+													style="width: 120px" class="form-control"
+													th:onchange="onUserTypeChange([[${cultivatorStat.index}]], this.value)">
+													<option value="0" selected>--Select--</option>
+													<option value="1">Owner</option>
+													<option value="2">Cultivator</option>
+													<option value="3">Enjoyer</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--<div class="col-md-4">
+									<div class="form-group" style="margin-bottom: 5px;">
+										<div class="input-group">
+											<div style="margin: 0 auto; width: 155px; color: #000;">
+												<i class="fa fa-save fa-2x fa-pull-left"
+													th:id="'update'+${cultivatorStat.index}"
+													th:onclick="updateCultivatorOwnerDetails([[${cultivatorStat.index}]])"
+													style="padding: 0px;padding-top: 4px;display:none;"></i>
+											</div>
+										</div>
+									</div>
+								</div>-->
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading"
+			style="text-align: center;background-color: honeydew;padding: 8spx; margin: 0 auto;display: table;">
+			<b>Cultivator's Data</b>
+		</div>
+		<div class="panel-body">
+			<table id="cultivatorGrid" class="table table-bordered table-striped dataTable">
+				<thead class="color-palette" style="background-color: #9494b8;">
+					<tr>
+						<td style="color: white; width:8%;background-color: #9494b8;"><b>Booking Id</b></td>
+						<td style="color: white; width:8%;background-color: #9494b8;"><b>Survey No</b></td>
+						<td style="color: white; width:7%;background-color: #9494b8;"><b>Khata No</b></td>
+						<td style="color: white; width:10%;background-color: #9494b8;"><b>Cultivator Type</b></td>
+						<td style="color: white; width:19%;background-color: #9494b8;"><b>Pattadhar Name</b></td>
+						<td style="color: white; width:19%;background-color: #9494b8;"><b>Pattadhar Father Name</b></td>
+						<td style="color: white; width:10%;background-color: #9494b8;"><b>Aadhar No</b></td>
+						<td style="color: white; width:11%;background-color: #9494b8;"><b>Occupant Extent</b></td>
+						<td style="color: white; width:12%;background-color: #9494b8;padding-left: 50px;"><b>Actions</b>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:id="${cultivator.bookingId}" th:each="cultivator:${cultivatorsList}">
+
+						<td style="width:8%;">
+							<span th:text="${cultivator.bookingId}"></span>
+							<input type="hidden" th:value="${cultivator.bookingId}"
+								th:id="'bookingId_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.part_key}"
+								th:id="'part_key_c'+${cultivatorStat.index}">
+
+							<input type="hidden" th:value="${cultivator.cr_vcode}"
+								th:id="'cr_vcode_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.cr_year}"
+								th:id="'cr_year_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.cr_season}"
+								th:id="'cr_season_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.owner_tenant}"
+								th:id="'owner_tenant_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.occupantExtent}"
+								th:id="'existingOccupantExtent_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.availableExtent}"
+								th:id="'availableExtent_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.occupantExtent}"
+								th:id="'totalOccupantExtent_c'+${cultivatorStat.index}">
+							<input type="hidden" th:value="${cultivator.anubhavadarExtent}"
+								th:id="'anubhavadarExtent_c'+${cultivatorStat.index}">
+
+						</td>
+						<td style="width:8%;">
+							<span th:text="${cultivator.crSno}"></span>
+							<input type="hidden" th:value="${cultivator.crSno}"
+								th:id="'crSno_c'+${cultivatorStat.index}">
+						</td>
+						<td style="width:6%;">
+							<span th:text="${cultivator.khNo}"></span>
+							<input type="hidden" th:value="${cultivator.khNo}" th:id="'khNo_c'+${cultivatorStat.index}">
+						</td>
+						<td style="width:10%;">
+							<span th:if="${cultivator.cultivatorType=='K' }">Cultivator</span>
+							<span th:if="${cultivator.cultivatorType=='O' }">Owner</span>
+							<span th:if="${cultivator.cultivatorType=='L' }">Enjoyer</span>
+
+							<input type="hidden" th:value="${cultivator.cultivatorType}"
+								th:id="'cultivatorType_c'+${cultivatorStat.index}">
+						</td>
+						<td style="width:19%;">
+							<!--<span th:text="${cultivator.ocName}"></span>-->
+							<input type="text" th:value="${cultivator.ocName}" class="form-control"
+								th:id="'ocName_c'+${cultivatorStat.index}" disabled="true">
+						</td>
+						<td style="width:19%;">
+							<!--<span th:text="${cultivator.fatherName}"></span>-->
+							<input type="text" th:value="${cultivator.fatherName}" class="form-control"
+								th:id="'fatherName_c'+${cultivatorStat.index}" disabled="true">
+						</td>
+						<td style="width:11%;">
+							<!--<span th:text="${cultivator.aadharNo}"></span>-->
+							<input type="text" th:value="${cultivator.aadharNo}" class="form-control"
+								th:id="'aadharNo_c'+${cultivatorStat.index}" disabled="true">
+						</td>
+						<td style="width:10%;">
+							<!--<span th:text="${cultivator.occupantExtent}"></span>-->
+							<input type="text" th:value="${cultivator.occupantExtent}" class="form-control"
+								th:id="'occupantExtent_c'+${cultivatorStat.index}" disabled="true">
+						</td>
+						<td style="width:9%;">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group" style="margin-bottom: 5px;">
+										<div class="input-group">
+											<div style="margin: 0 auto; width: 155px; color: #000;">
+												<i class="fa fa-edit fa-2x fa-pull-left"
+													th:id="'edit_c'+${cultivatorStat.index}"
+													th:onclick="editCultivatorDetails('_c[[${cultivatorStat.index}]]')"
+													th:style="'padding: 0px; display: ' + (${'N' eq cultivator.downloaded} ? 'inline-block' : 'none') + ';'"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group" style="margin-bottom: 5px;">
+										<div class="input-group">
+											<div style="margin: 0 auto; width: 155px; color: #000;">
+												<i class="fa fa-save fa-2x fa-pull-left"
+													th:id="'update_c'+${cultivatorStat.index}"
+													th:onclick="updateCultivatorDetails('_c[[${cultivatorStat.index}]]')"
+													style="padding: 0px;padding-top: 4px;display:none;"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group" style="margin-bottom: 5px;">
+										<div class="input-group">
+											<div style="margin: 0 auto; width: 155px; color: #000;">
+												<i class="fa fa-trash-o fa-2x fa-pull-left"
+													th:id="'delete_c'+${cultivatorStat.index}"
+													th:onclick="deleteCultivatorDetails('_c[[${cultivatorStat.index}]]')"
+													th:style="'padding: 0px; display: ' + (${cultivator.owner_tenant eq 'K' && 'N' eq cultivator.downloaded} ? 'inline-block' : 'none') + ';'"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div style="text-align: center;font-weight: bold;color:red;" th:unless="${ownersList!=null and !ownersList.isEmpty()}">
+	<span>No Data Available</span>
+</div>
+<!--<script type="text/javascript">
+	$(document).ready(function () {
+
+		new DataTable('#cultivatorGrid');
+
+	});
+</script>-->

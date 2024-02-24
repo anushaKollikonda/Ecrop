@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Users</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+	<!--		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var approved = parseInt(row.children[6].textContent);
+			total += approved;
+		});
+		document.getElementById('totalApproved').textContent = total;
+	});
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var attempted = parseInt(row.children[5].textContent);
+			total += attempted;
+		});
+		document.getElementById('totalattempted').textContent = total;
+	});
+
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var deleted = parseInt(row.children[5].textContent);
+			total += deleted;
+		});
+		document.getElementById('totaldeleted').textContent = total;
+	});
+
+</script>
+
+<style>
+	h1 {
+		background-color: grey;
+		color: white;
+		border-radius: 2px;
+		padding: 5px 0px;
+		margin-top: 10px;
+		text-align: center;
+		font-size: 160%;
+	}
+
+	table {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		font-family: 'Times New Roman', Times, serif;
+		border-collapse: collapse;
+	}
+</style>
+
+<body>
+	<img src="images/Header.jpg" alt="ghg" style="width:100%;">
+	<div style="background-color:grey;color: aliceblue;">
+		<h1> Abstract Report On Excess Booking By Khata No </h1>
+	</div>
+
+	<form>
+		<table id="tab" align="center" style="width: 100%;font-size: 17px;">
+			<thead style="color: aliceblue;background-color:grey" align="center" font->
+				<div style="font-weight: bolder;">
+					<th> S.No</th>
+					<th> District</th>
+					<th> Mandal </th>
+					<th> Village </th>
+					<th> RBK </th>
+					<th> To be Attempted </th>
+					<th> Approved </th>
+					<th> Deleted </th>
+				</div>
+
+			</thead>
+			<tbody>
+				<tr th:each="detai ,stat: ${list}">
+					<td align="center" th:text="${stat.index + 1}">1</td>
+					<td align="left" th:text="${detai.wbedname}"></td>
+					<td align="left" th:text="${detai.wbemname}"></td>
+					<td align="left" th:text="${detai.wbevname}"></td>
+					<td align="left" th:text="${detai.vname}"></td>
+					<td align="right" th:text="${detai.yet_to_attempt}"></td>
+					<td align="right" th:text="${detai.approved_by_mao}"></td>
+					<td align="right" th:text="${detai.deleted}"></td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+
+				<tr>
+
+					<td style="font-size: 20px;"> <b>Total</b> </td>
+					<td colspan="5"></td>
+					<td th:id="totalattempted"></td>
+					<td th:id="totalApproved"></td>
+					<td th:id="totaldeleted"></td>
+
+
+				</tr>
+			</tfoot>
+		</table>
+</body>
+
+</html>

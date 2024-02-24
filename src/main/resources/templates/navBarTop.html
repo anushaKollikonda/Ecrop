@@ -1,0 +1,108 @@
+<form th:action="@{/home}" method="post" th:fragment="navBarTop">
+	<nav class="navbar navbar-expand-sm bg-dark-green navbar-dark container-fluid">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item" style="margin-left: 85px;"></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link text-white" href="home">
+							HOME
+						</a>
+
+					</li>
+					<li class="nav-item" style="margin-left: 85px;"></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="agreementDropdown"
+							data-bs-toggle="dropdown">
+							USER MANAGEMENT
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="agreementDropdown">
+							<li><a class="dropdown-item" href="webland">Preparation Of Data For Crop
+									Booking
+									From Webland </a></li>
+							<li><a class="dropdown-item " href="login">Village Normal Areas Updation</a>
+							</li>
+							<li><a class="dropdown-item" href="#">Contact Us</a></li>
+						</ul>
+					</li>
+					<li class="nav-item" style="margin-left: 85px;"></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="transactionDropdown"
+							data-bs-toggle="dropdown">
+							TRANSACTIONS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="transactionDropdown">
+							<li th:if="${session.userType == 25}"><a class="dropdown-item" href="/cultivator">Add/Update
+									Cultivator</a></li>
+							<li><a class="dropdown-item " href="home">Home</a></li>
+							<li><a class="dropdown-item" href="login">Login</a></li>
+							<li><a class="dropdown-item " href="#">About Us</a></li>
+							<li><a class="dropdown-item " href="#">Contact Us</a></li>
+						</ul>
+					</li>
+					<li class="nav-item" style="margin-left: 85px;"></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="reportsDropdown"
+							data-bs-toggle="dropdown">
+							REPORTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+							<!--							<li><a class="dropdown-item" href="#">District Wise Abstract on Extent Booked</a></li>-->
+							<!--							<li><a class="dropdown-item" href="#">State Wide Crop Report</a></li>-->
+							<!--							<li><a class="dropdown-item" href="crop">Report On Crop Booking Details Mao</a></li>-->
+							<li><a class="dropdown-item" href="farmerdetails">Report Farmer Booking Details
+									Mao</a></li>
+							<li><a class="dropdown-item" href="normal">Report On Normal Areas Mao</a></li>
+							<li><a class="dropdown-item" href="rofr">Report On RofrBooked Extent</a></li>
+							<li><a class="dropdown-item" href="ekycmao">Report On Mao Authentication By VAA VRO
+									ekyc</a></li>
+							<li><a class="dropdown-item" href="rbksnomapping">RBK Survey No Mapping</a></li>
+							<li><a class="dropdown-item" href="allocatedSnoMap">Report On Allocated SurveyNo Mapping</a>
+							</li>
+							<li><a class="dropdown-item" href="datasrc">Data Source Wise Booking Extent</a></li>
+							<li><a class="dropdown-item" href="efishRofr">E-Fish/ROFR Details</a></li>
+							<li><a class="dropdown-item" href="farmdet">FarmerDetails</a></li>
+							<li><a class="dropdown-item" href="allcrops">Season Crop Booked Extent</a></li>
+							<li><a class="dropdown-item" href="efblkext">Blocked E-fish Extent</a></li>
+							<li><a class="dropdown-item" href="objunobj">List of Objectionable- UnObjectionable
+									Lands</a></li>
+									<li><a class="dropdown-item" href="empL">Employee List</a></li>
+									<li><a class="dropdown-item" href="repvaadet">Report On Vaa Deatils</a></li>
+									<li><a class="dropdown-item" href="devregdett">Report Device Registration Details</a></li>
+									<li><a class="dropdown-item" href="cropins"> Report On Crop Insurance Grievance Details</a></li>
+									<li><a class="dropdown-item" href="supchkra"> Supervisory Check Records Allotted</a></li>
+									<li><a class="dropdown-item" href="supchkappr"> Supervisory Check Entry Found Correct Report</a></li>
+									<li><a class="dropdown-item" href=supchk> Supervisory Check Entry Found Incorrect Report</a></li>
+									<li><a class="dropdown-item" href=supchkrejreport> Supervisory Officers  Remarks</a></li>
+									<li><a class="dropdown-item" href=cropbmao> Report On Crop Booking Details</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="transactionDropdown"
+							data-bs-toggle="dropdown">
+							Detailed Reports
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="transactionDropdown">
+							<li><a class="dropdown-item " href="phyackvwise">Village wise Physical Ack Report</a></li>
+							<li><a class="dropdown-item " href="phyackrbk">RBK wise Physical Ack Report</a></li>
+							<li><a class="dropdown-item " href="dwnlddetintf">Data Downloaded Details For Crop Booking</a></li>
+							<li><a class="dropdown-item " href="landdatadet"> Report On Village Wise Land Data Preperation</a></li>
+							<li><a class="dropdown-item " href="nonwebview">Non Web Land Entry Details</a></li>
+							<li><a class="dropdown-item " href="crpwrbkext">Abstract On RBK Wise Booked Extent</a></li>
+							<li><a class="dropdown-item " href="authmaoekycvaavaro">Village/RBK wise Report on VAA, VRO, Farmer eKyc Authentication</a></li>
+							<li><a class="dropdown-item " href="supupdsts">Supervisory Records Updation Status</a></li>
+							<li><a class="dropdown-item " href="maosocialauditR">Village Wise Rabi 2022-2023 Social Audit Grievances  Redressed Report</a></li>
+						</ul>
+					</li>
+					<li class="nav-item" style="margin-left: 85px;"></li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="logout">LOGOUT</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</form>

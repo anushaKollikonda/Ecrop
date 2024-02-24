@@ -1,0 +1,1147 @@
+html,body,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,fieldset,form,label,legend{margin:0;padding:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;}
+
+body 
+{
+	font-family:Arial, Tahoma, Sans-Serif;
+	font-size:0.75em;
+	line-height:1.5em;
+	
+}
+
+.global
+{
+    background: #e7e7e7 url(images/whiteBg.jpg) repeat-y;
+	margin: 0 auto;
+	width:970px;
+	
+}
+
+
+
+.clear{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+#container
+{
+    width: 962px; position: absolute; background-color: #fff; margin-left: -481px;left: 50%;
+}
+
+
+p.error
+{font-size:large;color:Red;}
+
+a.headerlink:link
+{font-size:8pt;color:#0064AC;font-family:Arial, Tahoma;text-decoration:none;font-weight:bold}
+a.headerlink:visited
+{font-size:8pt;color:#0064AC;font-family:Arial, Tahoma;text-decoration:none;font-weight:bold}
+a.headerlink:hover
+{font-size:8pt;color:#E7BA05;font-family:Arial, Tahoma;text-decoration:none;font-weight:bold}
+
+a.homelink:link
+{font-size:9pt;line-height:18px;color:#336699;font-family:Arial, Tahoma;text-decoration:none;font-weight:bold}
+a.homelink:visited
+{font-size:9pt;line-height:18px;color:#336699;font-family:Arial, Tahoma;text-decoration:none;font-weight:bold}
+a.homelink:hover
+{font-size:9pt;line-height:18px;color:#E58F25;font-family:Arial, Tahoma;text-decoration:underline;font-weight:bold}
+
+a.myHome:link
+{font: 12px Tahoma;font-weight:bold;color: #ffffff;text-align: center; white-space: nowrap;width:100%;text-decoration:none; }
+a.myHome:visited
+{font: 12px Tahoma;font-weight:bold;color: #ffffff;text-align: center;white-space: nowrap;width:100%;text-decoration:none;}
+a.myHome:hover
+{font: 12px Tahoma;font-weight:bold;color: #ffffff;text-align: center;white-space: nowrap;width:100%;text-decoration:none; }
+
+a.leftlink:link
+{font-size:8pt;line-height:18px;color:#336699;font-family:Arial, Tahoma;text-decoration:none;}
+a.leftlink:visited
+{font-size:8pt;line-height:18px;color:#336699;font-family:Arial, Tahoma;text-decoration:none;}
+a.leftlink:hover
+{font-size:8pt;line-height:18px;color:#E58F25;font-family:Arial, Tahoma;text-decoration:none;}
+
+.leftlinkHeading
+{font-size: 9pt;color: #ffffff;font-family: Arial, Tahoma;text-decoration: none;font-weight:bold; padding:2px 0 2px 3px}
+td.leftlinkHeading
+{ background-color:#336699}
+
+.pageHeading
+{font-size: 1.5em;color: #575757;font-family: Arial, Tahoma;text-decoration: none;font-weight:bold}
+
+.Heading
+{font-size: 1em;color: #575757;font-family: Arial, Tahoma;text-decoration: none;font-weight:bold}
+
+.subHeading
+{font-size: 0.8em;color: #ffffff;font-family: Arial, Tahoma;text-decoration: none;font-weight:bold}
+
+.fieldheading
+{font-family:Arial, Tahoma;color:#000000;font-size:8pt;font-weight:bold}
+
+.caption
+{font-size: 8pt;color: #000000;font-family:Arial, Tahoma;text-decoration: none;text-align:justify;line-height:20px;}
+
+/* Services Menu related styles */
+
+.servicesHeading
+{font-size: 9pt; font-weight:bold; color: #336699;font-family:Arial, Tahoma;text-decoration: none;text-align:justify;line-height:20px;}
+
+.servicesContainer
+{
+    width:90%;
+    float:left;
+    padding:0 0 0 0;
+	margin:0 0 0 0;
+	overflow: auto;
+}
+
+.services
+	{
+	  
+		width:100%;
+		float: left;		
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+		overflow: auto;					
+	}
+
+    .services ul
+		
+		{
+			
+			margin: 0 0 10px 10px !important;
+			padding:0;		
+		   				
+		}
+		
+		.services ul li
+			{
+		            color: #003366;
+					text-decoration: none;					
+					display: block;
+					font-size:8pt;				
+					              
+			}
+
+				.services ul li a				
+				{
+					color: #4b3326;
+					text-decoration: none;
+					padding: 3px 3px 2px 16px;
+					display: block;
+					background: url(../images/bullet.gif) no-repeat 3px center;				
+
+				}
+
+				.services ul li a:hover				
+				{
+					color: #6c2904; background-color: #f2ede5;
+														
+				}
+				
+				.services ul li a:selected				
+				{
+					color: #6c2904; background-color: #f2ede5;
+														
+				}
+				
+/* Services Menu related styles End */
+
+.terminology
+	{
+	  
+		width:100%;
+		float: left;		
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+		overflow: auto;					
+	}
+
+    .terminology ul
+		
+		{
+			
+			margin: 0 0 10px 0;
+			padding:0;		
+		   				
+		}
+		
+		.terminology ul li
+			{
+		            color: #003366;
+					text-decoration: none;					
+					display: block;
+					font-size:9pt;
+					padding: 3px 3px 3px 16px;
+					background: url(../images/bullet1.gif) no-repeat 3px center;			
+					              
+			}
+
+a.login:link
+{font-size:10pt;line-height:18px;color:#003366;font-family:Arial, Tahoma;text-decoration:none;}
+a.login:visited
+{font-size:10pt;line-height:18px;color:#003366;font-family:Arial, Tahoma;text-decoration:none;}
+a.login:hover
+{font-size:10pt;line-height:18px;color:#003366;font-family:Arial, Tahoma;text-decoration:underline;}
+
+div.childFormHeading
+{background-color: #1582BD;border-color: silver;border-collapse: collapse;border: 1px solid silver;font-family: Arial,Trebuchet MS, Verdana;font-size: 9pt;text-align: center;}
+
+td.header
+{font-weight: bold;font-size: 7.5pt;background-image: url(Images/grid_header_bg.gif);vertical-align: top;cursor: hand;color: #003366;text-align: left;white-space:nowrap}
+
+table.childform td.headingCell 
+{padding:0px;border: 1px solid gainsboro;font-family:Arial, Tahoma, Verdana;font-size:8pt;}
+
+.ActionMenuNormalStyle
+{font-size: 8pt;font-family:Arial, Tahoma, Verdana;color:Black;cursor: pointer;}
+.ActionMenuHoverStyle
+{font-size: 8pt;font-family:Arial, Tahoma, Verdana;color:Black;cursor: pointer;}
+
+
+.ActionSubMenuStyle
+{font-size: 8pt;font-family:Arial, Tahoma, Verdana;color:#5c534c;background-color:#cccccc;cursor: pointer;border-right: #999999 1px solid;border-top: #999999 1px solid;border-left: #999999 1px solid;border-bottom: #999999 1px solid;}
+.ActionSubMenuHoverStyle
+{font-size: 8pt;font-family:Arial, Tahoma, Verdana;color:Black;background-color:#5c534c;cursor: pointer;border-right: #999999 0px solid;border-top: #999999 0px solid;border-left: #999999 0px solid;border-bottom: #999999 0px solid;}
+
+.emaillink
+{font-size: 9pt;color: #035a8f;font-family:Arial, Tahoma, Verdana;text-decoration: none;border: 1px solid #cccccc;}
+
+A.anchor, div.dataviewcaption
+{font-size: 9pt;font-weight: bold;color: #035a8f;font-family:Arial, Tahoma, Verdana;text-decoration: none;
+}
+
+.subtab
+{font-size: 9pt;font-weight: bold;color: #035a8f;font-family: Arial, Tahoma, Verdana;text-decoration: none;}
+
+.subtabselected
+{font-size: 9pt;font-weight: bold;color: #ee0000;font-family: Arial, Tahoma, Verdana;text-decoration: none;}
+
+.deletionlabel
+{font-size: 9pt;font-weight: bold;color: #ff0000;font-family: Arial, Tahoma, Verdana;text-decoration: none;}
+
+ a.TypeAhead
+ {font-size: 9pt;/*	color: #035a8f; */color:Black;font-family: Arial, Tahoma, Verdana;text-decoration: none;white-space:nowrap}
+ 
+HyperLink, div.HyperLink, td.HyperLink,A.HyperLink, A.InferredField
+{font-size: 9pt;color: #035a8f;font-family:Arial, Tahoma, Verdana;text-decoration: none;white-space:nowrap}
+
+div.TypeAhead
+{
+	border-right: #b9c9ef 1px solid;
+	padding-right: 5px;
+	border-top: #728eb8 1px solid;
+	padding-left: 5px;
+	background-color:#dde7ea;
+	padding-bottom: 5px;
+	overflow: auto;
+	border-left: #728eb8 1px solid;
+	padding-top: 5px;
+	border-bottom: #b9c9ef 1px solid;
+	text-align: left;
+	white-space:nowrap;
+	width:auto;	
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 8pt;
+	color:Black;
+}
+div.scroll
+{
+	overflow:auto;
+}
+
+fieldset.form
+{
+	/*	border-top:solid 2px #dde7ea; 	padding-top:1px; 	border-width:thick; */
+	border: none;
+}
+
+input[type="radio"], input[type="checkbox"]
+{border:none;}
+
+select.dropdown 
+{
+    background:url(../images/textbox_bg.gif) repeat-x;
+    border-top:0px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    vertical-align: middle;
+}
+
+select.listbox
+{
+   
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    vertical-align: middle;
+}
+
+img
+{border: 0px none;}
+
+div.designerlabel
+{border: 1px dotted #ff0000;font-family: Arial, Tahoma, Verdana;font-size: 8pt;vertical-align: top;}
+
+div.label, span.label
+{font-family:Arial, Tahoma, Verdana;font-size: 8pt;vertical-align: top;color:#024862;text-align:left/*	line-height: 20px; */}
+
+span.ContentsTitle
+{font-weight: bold;font-size: 1em;color: #ffffff;font-family:Arial, Tahoma, Verdana;text-decoration: none;}
+
+span.SubContentsTitle
+{font-weight: bold;font-size: 10pt;color: #ffffff;font-family:Arial, Tahoma, Verdana;}
+
+.footer
+{
+color:#000000;
+font-family:Arial, Tahoma, Verdana;font-size: 8pt; 
+
+     
+}
+
+.footer label
+{
+    margin-left:10px  
+}
+
+hr
+{
+ width:98%;
+ margin-left:0;
+ margin-top:-0.25em;
+ color:#cccccc;
+ height:2px;
+ 
+}
+
+table.header
+{
+    background:url(../images/header.gif) repeat-x;
+    height:55px
+}
+
+table#tabSelection
+{
+	width:100%;
+}
+
+td.tabFill
+{
+	border-bottom:1pt solid silver;
+	width:100%;
+	text-align:right;
+}
+
+td.tabSpacer
+{
+	border-bottom:1pt solid silver;
+}
+
+td.tab
+{
+	font-size:small;
+	padding:5px;
+	border:1pt solid silver;
+	border-left:1pt solid silver;
+	color:dimgray;
+	cursor:pointer;
+	background-color:whitesmoke;
+}
+
+td.selectedTab
+{
+	font-weight:bold;
+	font-size:small;
+	padding:5px;
+	border-top:1pt solid silver;
+	border-left:1pt solid silver;
+	border-right:1pt solid silver;
+	border-bottom:0pt solid white;
+	background-color:white;
+}
+
+td.menuTab
+{
+	font-family:arial;
+	font-size:11pt;
+	letter-spacing:1pt;
+	vertical-align:bottom;
+	padding:5px;
+	border:1pt solid silver;
+	border-left:1pt solid silver;
+	color:#C8C8C8;
+	cursor:pointer;
+	background-color:whitesmoke;
+}
+
+td.selectedMenuTab
+{
+	font-weight:bold;
+	font-family:arial;
+	font-size:11pt;
+	letter-spacing:1pt;
+	vertical-align:bottom;
+	padding:5px;
+	border-top:1pt solid silver;
+	border-left:1pt solid silver;
+	border-right:1pt solid silver;
+	border-bottom:0pt solid white;
+	color:#336699;
+	background-color:whitesmoke;
+}
+
+div#sample 
+{
+	padding:20px;
+	background-color:white;
+	border-bottom:1pt solid silver;
+}
+div#source
+{
+	padding:20px;
+	background-color:white;
+	border-bottom:1pt solid silver;
+}
+
+h5.source 
+{
+	color:dimgray;
+}
+a:link, a:visited 
+{  
+	text-decoration: none;
+	color:blue
+}
+a:hover 
+{  
+	text-decoration: underline;
+	color:blue
+} 
+td 
+{
+	font-size:small;
+}
+
+table.menuItem
+{
+	border:1pt solid whitesmoke;
+}
+table.menuItemOn
+{
+	border:1pt solid silver;
+	background-color:gainsboro;
+}
+div.text
+{
+	margin-bottom:5px;
+	padding:5px;
+	border:0pt solid silver;
+	background-color:lightyellow;
+	line-height:150%;
+}
+
+.splitterPanel
+{
+    border:1px solid #dbdedf;
+}
+
+div.dataGrid
+{
+    overflow:auto;
+    width:100%;
+    height:100%;
+    background-color:#fff;    
+}
+
+div.dataForm
+{
+    overflow:auto;
+    width:100%;
+    height:100%;
+    background-color:#fff;    
+}
+
+div#logo
+{
+    background-image:url(../Images/eDistrictLogo.png);
+    background-repeat:no-repeat;
+    width:200px;
+    height:55px;    
+}
+
+div#collage
+{
+    background-image:url(../Images/collage.gif);
+    background-repeat:no-repeat;
+    width:340px;
+    height:55px;    
+}
+
+td#title 
+{
+	vertical-align:bottom;
+	padding:5px;
+	width:100%;
+	background-color:#5a7ba5;
+}
+
+table#menuTable td 
+{
+	font-size:small
+}
+
+td.menuPanelTitle
+{
+	border-bottom:1pt solid silver;
+	font-weight:bold;
+	color:#5a7ba5;
+	font-size:12pt;
+	letter-spacing:1pt;
+	vertical-align:bottom;
+}
+
+td.button 
+{
+	vertical-align:bottom
+}
+
+button 
+{
+	font-weight:bold;
+	color:#000;
+    background:url(../Images/btnAqua.gif) repeat-x;
+    height:22px;
+    border:1px #82D2FB solid;
+    cursor:pointer;
+    border-radius:5px;
+	-moz-border-radius:5px;   
+	-webkit-border-radius:5px;        
+}
+
+button:hover 
+{
+	font-weight:bold;
+	color:#fff;
+    background:url(../Images/btnAquaOver.gif) repeat-x;
+    height:22px;
+    border:1px #0092DD solid;
+    cursor:pointer;
+    border-radius:5px;
+	-moz-border-radius:5px;   
+	-webkit-border-radius:5px;    
+}
+
+td.AquaBtn
+{
+    font-weight:bold;
+    text-align:center;
+	color:#000;
+    background:url(../Images/btnAqua.gif) repeat-x;
+    height:20px;
+    border:1px #82D2FB solid;
+    cursor:pointer;
+    border-radius:5px;
+	-moz-border-radius:5px;   
+	-webkit-border-radius:5px;   
+}
+
+td.AquaBtn:hover 
+{
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+    background:url(../Images/btnAquaOver.gif) repeat-x;
+    height:20px;
+    border:1px #0092DD solid;
+    cursor:pointer;
+    border-radius:5px;
+	-moz-border-radius:5px;   
+	-webkit-border-radius:5px;    
+}
+
+button.search
+{
+	font-weight:bold;
+	color:#575757;
+    background:url(../Images/srchBtn.gif) repeat-x;
+    height:20px;
+    border:1px #DE8400 solid;
+    cursor:pointer;
+    vertical-align:top        
+}
+
+button.search:hover
+{
+	font-weight:bold;
+	color:#000;
+    background:url(../Images/srchBtnOver.gif) repeat-x;
+    height:20px;
+    border:1px #DE8400 solid;
+    cursor:pointer;
+    vertical-align:top        
+}
+
+select 
+{
+	font-size:small;
+	border-radius:5px;
+	-moz-border-radius:5px;   
+	-webkit-border-radius:5px;
+}
+
+select:focus
+{
+    outline:none;
+	border-color:#0065B4!important;
+	background-color:#fffee9;
+	-ie-box-shadow:0 0 8px rgba(0,142,254,.5);
+	-moz-box-shadow:0 0 8px rgba(0,142,254,.5);
+	-webkit-box-shadow:0 0 8px rgba(0,142,254,.5);
+	filter:progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=2, offY=0, positive=1),
+	progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=0, offY=2, positive=1),
+	progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=-2, offY=0, positive=1),
+	progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=0, offY=-2, positive=1)
+}
+
+.textbox
+{
+	font-size: 9pt;
+    color: #000000;
+    font-family: Arial, Tahoma, Verdana;
+    text-decoration: none;    
+    border: solid 1px #a9a9a7 ;
+    background-color: #ffffff;	
+}
+
+.textboxBg
+{
+  background:url(../images/textbox_bg.gif) repeat-x;
+  border:1px solid #ccc;  
+}
+
+input 
+{
+	font-size:small;
+	padding-left:2px;
+	border:1px solid #cccccc;
+	border-radius:5px;
+	-moz-border-radius:5px;   
+	-webkit-border-radius:5px;
+}
+
+input:focus
+{
+	outline:none;
+	border-color:#0065B4!important;
+	background-color:#fffee9;
+	box-shadow:0 0 5px rgba(0,142,254,1);
+	-moz-box-shadow:0 0 5px rgba(0,142,254,1);
+	-webkit-box-shadow:0 0 5px rgba(0,142,254,1);
+	filter:progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=2, offY=0, positive=true),
+	progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=0, offY=2, positive=true),
+	progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=-2, offY=0, positive=true),
+	progid:DXImageTransform.Microsoft.dropShadow(color=#C8E7FF, offX=0, offY=-2, positive=true)
+}
+
+textarea 
+{
+	font-family:arial;
+	font-size:small;
+	border:1px solid #cccccc
+}
+
+div#message 
+{
+	font-size:14pt;
+	font-family:arial;
+}
+
+td.sampleNumber
+{
+	text-align:right;
+	border:1pt solid silver;
+	color:dimgray;
+	background-color:white;
+}
+
+th.columnTitle
+{
+	font-size:10pt;
+	font-weight:bold;
+	color:dimGray;
+}
+
+.gridViewStyle
+{
+    font-family: arial, Tahoma, MS Sans Serif;
+    font-size: 3pt;
+}
+
+table.section td
+{
+  font-size:8.5pt    
+}
+
+label.section
+{
+    font-family:Arial, Tahoma, Verdana;    
+	font-weight:bold;
+	font-size:1.25em;
+	line-height:1.8em;	
+	background-color:#fff;	
+}
+
+legend
+{
+    font-family:Arial, Tahoma, Verdana;    
+	font-weight:bold;
+	font-size:1.15em;
+	line-height:1.8em;
+	background-color:#fff;	
+}
+
+legend.section
+{
+	color:#0372C0;
+}
+
+fieldset
+{
+     font-family:Arial, Tahoma, Verdana;
+     border:0px solid #cccccc;   
+     background-color:#fff;
+     margin:0 0 0 0  
+}
+
+fieldset.section
+{
+ border:1px solid #b6b6b6;
+ background-color:#f8f8f8;
+ background-image:url(../Images/fieldset-gradient.gif); 
+ background-repeat:repeat-x;
+ }
+ 
+ .pageView
+{
+    border: 1px solid #dbdedf;   
+    margin-top: -1px;
+    width:98%;
+    float:left  
+}
+
+
+ /* DBNetGrid styles */
+ 
+.dbnetgrid td,input,select   
+{   
+    font-family: Arial, Tahoma;       
+}  
+  
+.dbnetgrid .even   
+{   
+    background-color:#fff;
+	padding:3px 3px 3px 3px;
+	border:1px solid #dbdedf;
+	cursor:pointer;
+	color:#575757;  
+}
+   
+.dbnetgrid .odd   
+{   
+    background-color:#f6f6f6;
+	padding:3px 3px 3px 3px;
+	border:1px solid #dbdedf;
+	cursor:pointer;
+    color:#575757;
+}   
+
+.dbnetgrid .highlight   
+{   
+    background:url(../Images/highlightRow.gif) #E2E9A1 repeat;
+    height:100%;    
+    border:1px solid #dbdedf;
+    cursor:pointer;
+    font-size:1em;
+    color:#000;
+    padding:3px 3px 3px 3px;   
+} 
+  
+.dbnetgrid .selected
+{   
+    background: url(../images/selectedRow.gif) #49a6bf repeat;
+	padding:3px 3px 3px 3px;
+	border:1px solid #dbdedf;	
+	cursor:pointer;
+	color:#fff;	
+}
+
+  
+.dbnetgrid .data-cell   
+{	
+    border:0pt;   
+    border:1px solid #dbdedf;
+    cursor:pointer;
+    font-size:1em;
+    white-space:nowrap;
+    padding:3px 3px 3px 3px;
+    white-space:nowrap;
+} 
+ 
+.dbnetgrid .header-cell   
+{   
+	background:url(../images/gridHeader.gif) #03689c repeat ;
+	border:1px solid #dbdedf;
+	height:100%;
+	width:150px;
+    white-space:nowrap;
+	color:#ffffff;
+	padding:3px 3px 0 3px;
+	cursor:pointer;
+} 
+
+.dbnetedit-message-box
+{
+	border: 1px solid silver;
+	background-color:#F6F5F1;
+	padding:5px;
+	white-space:normal;
+	color:Red
+}
+
+/*
+.dbnetedit-input
+{
+  border:1px solid #757575  
+}
+*/
+
+
+/* Styles for dialog boxes and date-picker */
+
+.dialog *
+{
+	font-family: Arial, Verdana;
+	font-size: small;    
+}
+
+#dialogTable
+{
+	border:1pt solid #cccccc;
+	background-color:#0081C2;	
+}
+
+.dialog .title-bar
+{
+	color: white;
+	font-weight: bold;
+	background:url(../images/dialog-bg.png) repeat;
+}
+
+.dialog .content
+{
+	background-color:#FFFCF1;
+	color: black;		
+}
+
+.dialog .highlight
+{
+	background-color: gold;
+}
+
+.dialog .message-box
+{
+	border: 1px solid silver;
+	background-color:#FFF6A8;
+	padding:5px;
+}
+
+table.date-picker
+{
+	background-color:#0792C5;
+	top:-10px;
+	left:-100px;
+	position:absolute;
+	color:#fff;		 
+}
+
+.date-picker .date-grid
+{
+	border-collapse: collapse;	
+}
+
+.date-picker .date-grid .header-cell
+{
+	background-color: #FEF8E4;
+	font-weight: bold;
+	text-align: center;
+	color:#000;
+	font-size:8pt
+}
+
+.date-picker .date-grid .cell
+{
+	border: 1px solid gainsboro;
+	background-color:#fff;
+	color:#1C96C4;	   
+}
+
+.date-picker .date-grid .highlight
+{
+	background-color: #FFDD68;
+	color:#000
+}
+
+.date-picker .date-grid .selected
+{
+	background-color: #0081C2;
+}
+
+.dbnetsuite-message-box-content
+{
+	border: 1px solid silver;
+	background-color:#FFF6A8;
+	padding:10px;
+}
+
+.dbnetsuite .message-line
+{
+    border:1pt solid silver;
+    background-color:whitesmoke;
+    padding:2px;
+}
+
+.dbnetsuite .thumbnail
+{
+    width:60px;
+    height:60px;   
+}
+
+div.thumbnail-panel
+{
+	border:0 inset;
+	padding:0px;
+	text-align:center;
+	vertical-align:middle;	
+}
+
+.dbnetsuite .field-highlight
+{
+	border:1pt solid red;
+}
+
+.dbnetsuite .field-modified
+{
+	background-color:gold;
+}
+
+.dbnetsuite .search-toolbar
+{
+	border-top: 1pt solid silver;
+}
+
+.dbnetsuite .upload-toolbar
+{
+	border-top: 1pt solid silver;	
+}
+
+.stackTrace
+{
+	color:#336699;
+	font-size:8pt;
+}
+
+.dbnetlicense
+{
+	border:1pt inset;
+}
+
+.RedPageView
+{
+	width:400;
+	z-index:999;
+}
+
+.scroller
+	{
+		width:40px;
+	}
+	
+.scroll
+{
+    overflow:auto;
+}
+
+/* navigation */
+#nav-secondary
+	{
+	  
+		width: 160px;
+		float: left;
+		border-right: 1px solid #ded1cb;
+		
+					
+	}
+	
+	#nav-secondary h4
+		{
+			 margin:10px 0 10px 5px;
+			font-weight: bold;
+			padding-left:5px;
+			text-transform: uppercase;
+			font-family:Arial, Tahoma;
+			color: #6c2904;	
+			background-color:#efefef		
+		}
+
+		
+
+		#nav-secondary ul
+		
+		{
+			margin: 0 0 20px 5px !important;
+			padding:0;					
+		}
+		
+		#nav-secondary ul li
+			{
+		            color: #4b3326;
+					text-decoration: none;					
+					display: block;
+					font-size:0.9em;
+					                  
+			}
+
+				#nav-secondary ul li a				
+				{
+					color: #4b3326;
+					text-decoration: none;
+					padding: 3px 3px 3px 16px;
+					display: block;
+					background: url(../images/bullet.gif) no-repeat 3px center;
+					border-bottom: 1px solid #e7ddce;
+
+				}
+
+				#nav-secondary li a:hover				
+				{
+					color: #6c2904; background-color: #f2ede5;					
+				}					
+
+					
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber 
+{
+    width:80%; margin-right:20px; float:right
+}
+.tabberlive 
+{
+ width:80%; margin-right:20px; float:right;   
+ margin-top:2em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+ margin:0;
+ padding: 3px 0;
+ border-bottom: 1px solid #778;
+ font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernav li
+{
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+
+ul.tabbernav li a
+{
+ padding: 3px 0.5em;
+ margin-left: 3px;
+ border: 1px solid #778;
+ border-bottom: none;
+ background: #DDE;
+ text-decoration: none;
+}
+
+ul.tabbernav li a:link { color: #448; }
+ul.tabbernav li a:visited { color: #667; }
+
+ul.tabbernav li a:hover
+{
+ color: #000;
+ background: #AAE;
+ border-color: #227;
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-color: #fff;
+ border-bottom: 1px solid #fff;
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+ color: #000;
+ background: white;
+ border-bottom: 1px solid white;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+ padding:5px;
+ border:1px solid #aaa;
+ border-top:0;
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none;
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tab1 {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+ height:200px;
+ overflow:auto;
+}

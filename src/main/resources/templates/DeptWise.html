@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Users</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+	<!--		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var agri_cultivable_land = parseInt(row.children[2].textContent);
+			total += agri_cultivable_land;
+		});
+		document.getElementById('totalAgri').textContent = total;
+	});
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var a_vaaauthextent = parseInt(row.children[3].textContent);
+			total += a_vaaauthextent;
+		});
+		document.getElementById('totalA.vaaauth').textContent = total;
+	});
+
+
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var a_vroauthextent = parseInt(row.children[4].textContent);
+			total += a_vroauthextent;
+		});
+		document.getElementById('totalA.vroauth').textContent = total;
+	});
+
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var a_ekycbookedext = parseInt(row.children[5].textContent);
+			total += a_ekycbookedext;
+		});
+		document.getElementById('totalA.ekyc').textContent = total;
+	});
+
+
+<!--HORTICULTURE-->
+
+	document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var hcultivable_land = parseInt(row.children[6].textContent);
+			total += hcultivable_land;
+		});
+		document.getElementById('totalhorti').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var h_vaaauthextent = parseInt(row.children[7].textContent);
+			total += h_vaaauthextent;
+		});
+		document.getElementById('totalH.vaa').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var h_vroauthextent = parseInt(row.children[8].textContent);
+			total += h_vroauthextent;
+		});
+		document.getElementById('totalH.vro').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var h_ekycbookedext = parseInt(row.children[9].textContent);
+			total += h_ekycbookedext;
+		});
+		document.getElementById('totalH.ekyc').textContent = total;
+	});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var seri_cultivable_land = parseInt(row.children[10].textContent);
+			total += seri_cultivable_land;
+		});
+		document.getElementById('totalseri').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var s_vaaauthextent = parseInt(row.children[11].textContent);
+			total += s_vaaauthextent;
+		});
+		document.getElementById('totalS.vaa').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var s_vroauthextent = parseInt(row.children[12].textContent);
+			total += s_vroauthextent;
+		});
+		document.getElementById('totalS.vro').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var s_ekycbookedext = parseInt(row.children[13].textContent);
+			total += s_ekycbookedext;
+		});
+		document.getElementById('totalS.ekyc').textContent = total;
+	});
+
+
+//SOCIAL
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var soc_forestry_cultivable_land = parseInt(row.children[14].textContent);
+			total += soc_forestry_cultivable_land;
+		});
+		document.getElementById('totalsoc').textContent = total;
+	});
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var r_vaaauthextent = parseInt(row.children[15].textContent);
+			total += r_vaaauthextent;
+		});
+		document.getElementById('totalR.vaa').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var r_vroauthextent = parseInt(row.children[16].textContent);
+			total += r_vroauthextent;
+		});
+		document.getElementById('totalR.vro').textContent = total;
+	});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+		var rows = document.querySelectorAll('tbody tr');
+		var total = 0;
+		rows.forEach(function (row) {
+			var r_ekycbookedext = parseInt(row.children[17].textContent);
+			total += r_ekycbookedext;
+		});
+		document.getElementById('totalR.ekyc').textContent = total;
+	});
+
+</script>
+
+
+<style>
+	h1 {
+		background-color: grey;
+		color: white;
+		border-radius: 2px;
+		padding: 5px 0px;
+		margin-top: 10px;
+		text-align: center;
+		font-size: 160%;
+	}
+
+	table {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		font-family: 'Times New Roman', Times, serif;
+		border-collapse: collapse;
+	}
+</style>
+
+<body>
+	<img src="images/Header.jpg" alt="ghg" style="width:100%;">
+	<div style="background-color:grey;color: aliceblue;">
+		<h1> Report On Deparment Wise VAA/VRO Authorization And Ekyc </h1>
+	</div>
+
+	<form>
+		<table id="tab" align="center" style="width: 100%;font-size: 17px;">
+			<thead style="color: aliceblue;background-color:grey" align="center" font->
+				<tr style="font-weight: bolder;">
+					<th rowspan="2"> S.No</th>
+					<th rowspan="2"> Dname</th>
+					<th colspan="4"> Agri Culture</th>
+					<th colspan="4"> Horti Culture </th>
+					<th colspan="4"> Seri Culture </th>
+					<th colspan="4"> Social Forestry </th>
+				</tr>
+
+				<tr>
+					<th> Booked Area</th>
+					<th> VAA Ext</th>
+					<th> VRO Ext</th>
+					<th> eKYC Ext</th>
+
+					<th> Booked Area</th>
+					<th> VAA Ext</th>
+					<th> VRO Ext</th>
+					<th> eKYC Ext</th>
+
+					<th> Booked Area</th>
+					<th> VAA Ext</th>
+					<th> VRO Ext</th>
+					<th> eKYC Ext</th>
+
+					<th> Booked Area</th>
+					<th> VAA Ext</th>
+					<th> VRO Ext</th>
+					<th> eKYC Ext</th>
+
+				</tr>
+
+
+			</thead>
+			<tbody>
+				<tr th:each="dpwise ,stat: ${dept}">
+					<td align="center" th:text="${stat.index + 1}">1</td>
+					<td align="left" th:text="${dpwise.dname}"></td>
+					<td align="right" th:text="${dpwise.agri_cultivable_land}"></td>
+					<td align="right" th:text="${dpwise.a_vaaauthextent}"></td>
+					<td align="right" th:text="${dpwise.a_vroauthextent}"></td>
+					<td align="right" th:text="${dpwise.a_ekycbookedext}"></td>
+
+					<td align="right" th:text="${dpwise.hcultivable_land}"></td>
+					<td align="right" th:text="${dpwise.h_vaaauthextent}"></td>
+					<td align="right" th:text="${dpwise.h_vroauthextent}"></td>
+					<td align="right" th:text="${dpwise.h_ekycbookedext}"></td>
+
+					<td align="right" th:text="${dpwise.seri_cultivable_land}"></td>
+					<td align="right" th:text="${dpwise.s_vaaauthextent}"></td>
+					<td align="right" th:text="${dpwise.s_vroauthextent}"></td>
+					<td align="right" th:text="${dpwise.s_ekycbookedext}"></td>
+
+					<td align="right" th:text="${dpwise.soc_forestry_cultivable_land}"></td>
+					<td align="right" th:text="${dpwise.r_vaaauthextent}"></td>
+					<td align="right" th:text="${dpwise.r_vroauthextent}"></td>
+					<td align="right" th:text="${dpwise.r_ekycbookedext}"></td>
+				</tr>
+			</tbody>
+			<tfoot>
+
+				<tr>
+					<td style="font-size: 20px;" > <b>Total</b> </td>
+					<td rowspan="2"></td>
+					<!--					agri-->
+					<td style="text-align: right;" th:id="totalAgri"></td>
+					<td style="text-align: right;" th:id="totalA.vaaauth"></td>
+					<td style="text-align: right;" th:id="totalA.vroauth"></td>
+					<td style="text-align: right;" th:id="totalA.ekyc"></td>
+
+					<!--					horti-->
+					<td style="text-align: right;" th:id="totalhorti"></td>
+					<td style="text-align: right;" th:id="totalH.vaa"></td>
+					<td style="text-align: right;" th:id="totalH.vro"></td>
+					<td style="text-align: right;" th:id="totalH.ekyc"></td>
+
+<!--										seri-->
+					<td style="text-align: right;" th:id="totalseri"></td>
+					<td style="text-align: right;" th:id="totalS.vaa"></td>
+					<td style="text-align: right;" th:id="totalS.vro"></td>
+					<td style="text-align: right;" th:id="totalS.ekyc"></td>
+
+
+<!--										soc-->
+					<td style="text-align: right;" th:id="totalsoc"></td>
+					<td style="text-align: right;" th:id="totalR.vaa"></td>
+					<td style="text-align: right;" th:id="totalR.vro"></td>
+					<td style="text-align: right;" th:id="totalR.ekyc"></td>
+
+
+
+
+				</tr>
+			</tfoot>
+		</table>
+	</form>
+
+</body>
+
+</html>

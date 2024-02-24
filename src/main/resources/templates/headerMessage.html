@@ -1,0 +1,13 @@
+<div style="background-color:lightblue;" th:fragment="welcomeHeaderMsg">
+	<center>
+		<p style="font-size: larger;"> Welcome to <b><span th:text="${session.name}"></span></b>
+			<label th:if="${session.userType != 17}">from District ::
+				<b> <span th:text="${session.wbedname}"></span></b> , Mandal :: <b>
+					<span th:text="${session.wbemname}"></span></b>
+				<label th:if="${session.userType == 25}">,Village ::
+					<b><span th:text="${session.wbevname}"></span>
+				</label>
+			</label>
+		</p>
+	</center>
+</div>

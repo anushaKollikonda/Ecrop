@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Users</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+<!--		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<style>
+	h1 {
+		background-color: grey;
+		color: white;
+		border-radius: 2px;
+		padding: 5px 0px;
+		margin-top: 10px;
+		text-align: center;
+		font-size: 160%;
+	}
+	table {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+border-collapse: collapse;}
+</style>
+<body>
+	<img src="images/Header.jpg" alt="ghg" style="width:100%;">
+	<div style="background-color:grey;color: aliceblue;">
+		<h1> District Wise Village Secretariate Aadhaar Updated/Not Updated Details </h1>
+	</div>
+
+	<form >
+		<table id="tab" align="center" style="width: 55%;font-size: 20px;">
+			<thead style="color: aliceblue;background-color:grey" align="center">
+				<tr>
+					<th> District</th>
+					<th> Updated Count </th>
+					<th> Not Updated Count </th>
+				</tr>
+
+
+			</thead>
+			<tbody>
+				<tr th:each="detai : ${aadha }">
+					<td align="center" th:text="${detai.district}"></td>
+					<td align="center" th:text="${detai.updatedcount}"></td>
+					<td align="center" th:text="${detai.notupdatedcount}"></td>
+				</tr>
+			</tbody>
+		</table>
+</body>
+
+</html>
